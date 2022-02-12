@@ -29,23 +29,25 @@ namespace AudioMusik
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
             this.LeftButton = new System.Windows.Forms.Button();
             this.PlayButton = new System.Windows.Forms.Button();
             this.RightButton = new System.Windows.Forms.Button();
             this.listBox = new System.Windows.Forms.ListBox();
-            this.Button = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SaveButton = new System.Windows.Forms.Button();
+            this.DeleteButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(27, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox.Image = global::AudioMusik.Properties.Resources.ММММ;
+            this.pictureBox.Location = new System.Drawing.Point(27, 12);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox.TabIndex = 0;
+            this.pictureBox.TabStop = false;
             // 
             // LeftButton
             // 
@@ -94,52 +96,57 @@ namespace AudioMusik
             this.listBox.Size = new System.Drawing.Size(200, 95);
             this.listBox.TabIndex = 4;
             // 
-            // Button
+            // SaveButton
             // 
-            this.Button.Location = new System.Drawing.Point(27, 384);
-            this.Button.Name = "Button";
-            this.Button.Size = new System.Drawing.Size(94, 23);
-            this.Button.TabIndex = 5;
-            this.Button.Text = "button1";
-            this.Button.UseVisualStyleBackColor = true;
+            this.SaveButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.SaveButton.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SaveButton.ForeColor = System.Drawing.Color.Black;
+            this.SaveButton.Location = new System.Drawing.Point(27, 384);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(94, 23);
+            this.SaveButton.TabIndex = 5;
+            this.SaveButton.Text = "Добавить";
+            this.SaveButton.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // DeleteButton
             // 
-            this.button2.Location = new System.Drawing.Point(127, 384);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.DeleteButton.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DeleteButton.ForeColor = System.Drawing.Color.Black;
+            this.DeleteButton.Location = new System.Drawing.Point(127, 384);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(100, 23);
+            this.DeleteButton.TabIndex = 6;
+            this.DeleteButton.Text = "Удалить";
+            this.DeleteButton.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.Button);
+            this.ClientSize = new System.Drawing.Size(319, 450);
+            this.Controls.Add(this.DeleteButton);
+            this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.listBox);
             this.Controls.Add(this.RightButton);
             this.Controls.Add(this.PlayButton);
             this.Controls.Add(this.LeftButton);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.Button LeftButton;
         private System.Windows.Forms.Button PlayButton;
         private System.Windows.Forms.Button RightButton;
         private System.Windows.Forms.ListBox listBox;
-        private System.Windows.Forms.Button Button;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.Button DeleteButton;
     }
 }
 
