@@ -1,4 +1,14 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Media;
+
 namespace AudioMusik
 {
     partial class Form1
@@ -110,21 +120,21 @@ namespace AudioMusik
             // 
             // DeleteButton
             // 
-            this.DeleteButton.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DeleteButton.ForeColor = System.Drawing.Color.Black;
-            this.DeleteButton.Location = new System.Drawing.Point(127, 384);
-            this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(100, 23);
-            this.DeleteButton.TabIndex = 6;
-            this.DeleteButton.Text = "Удалить";
-            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.StopButton.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.StopButton.ForeColor = System.Drawing.Color.Black;
+            this.StopButton.Location = new System.Drawing.Point(127, 384);
+            this.StopButton.Name = "StopButton";
+            this.StopButton.Size = new System.Drawing.Size(100, 23);
+            this.StopButton.TabIndex = 6;
+            this.StopButton.Text = "Stop";
+            this.StopButton.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(319, 450);
-            this.Controls.Add(this.DeleteButton);
+            this.Controls.Add(this.StopButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.listBox);
             this.Controls.Add(this.RightButton);
