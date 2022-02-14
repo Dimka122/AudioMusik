@@ -14,19 +14,21 @@ namespace AudioMusik
 {
     public partial class Form1 : Form
     {
-        SoundPlayer sp;
+       // System.Media.SoundPlayer sp;
         string[] file,filepath;
         public Form1()
         {
             InitializeComponent();
-            sp=new SoundPlayer();
+             System.Media.SoundPlayer sp=new System.Media.SoundPlayer();
         }
         private void PlayButton_Click(object sender,EventArgs e)
         { 
+            System.Media.SoundPlayer sp=new System.Media.SoundPlayer();
             sp.Play();
         }
         private void StopButton_Click(object sender,EventArgs e)
         {
+            System.Media.SoundPlayer sp=new System.Media.SoundPlayer();
             sp.Stop();
         }
         private void SaveButton_Click(object sender,EventArgs e)
@@ -44,7 +46,8 @@ namespace AudioMusik
         }
         private void listBox_SelectedIndexChanged(object sender,EventArgs e)
         {
-            //sp.URL=filepath[listBox.SelectedIndex];
+            //sp.SoundLocation=filepath[listBox.SelectedIndex];
+
         }
     }
 }
