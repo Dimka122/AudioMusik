@@ -45,7 +45,7 @@ namespace AudioMusik
             this.RightButton = new System.Windows.Forms.Button();
             this.listBox = new System.Windows.Forms.ListBox();
             this.SaveButton = new System.Windows.Forms.Button();
-            this.DeleteButton = new System.Windows.Forms.Button();
+            this.StopButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,6 +82,9 @@ namespace AudioMusik
             this.PlayButton.TabIndex = 2;
             this.PlayButton.Text = ">";
             this.PlayButton.UseVisualStyleBackColor = false;
+            this.PlayButton.Click+=new EventHandler(PlayButton_Click);
+            Controls.Add(PlayButton);
+
             // 
             // RightButton
             // 
@@ -105,6 +108,8 @@ namespace AudioMusik
             this.listBox.Name = "listBox";
             this.listBox.Size = new System.Drawing.Size(200, 95);
             this.listBox.TabIndex = 4;
+            this.listBox.SelectedIndexChanged+=new EventHandler(listBox_SelectedIndexChanged);
+            Controls.Add(listBox);
             // 
             // SaveButton
             // 
@@ -117,6 +122,8 @@ namespace AudioMusik
             this.SaveButton.TabIndex = 5;
             this.SaveButton.Text = "Добавить";
             this.SaveButton.UseVisualStyleBackColor = false;
+            this.SaveButton.Click+=new EventHandler(SaveButton_Click);
+            Controls.Add(SaveButton);
             // 
             // DeleteButton
             // 
@@ -127,7 +134,9 @@ namespace AudioMusik
             this.StopButton.Size = new System.Drawing.Size(100, 23);
             this.StopButton.TabIndex = 6;
             this.StopButton.Text = "Stop";
-            this.StopButton.UseVisualStyleBackColor = true;
+            this.StopButton.UseVisualStyleBackColor = false;
+            this.StopButton.Click += new EventHandler(StopButton_Click);
+            Controls.Add(StopButton);
             // 
             // Form1
             // 
@@ -156,7 +165,7 @@ namespace AudioMusik
         private System.Windows.Forms.Button RightButton;
         private System.Windows.Forms.ListBox listBox;
         private System.Windows.Forms.Button SaveButton;
-        private System.Windows.Forms.Button DeleteButton;
+        private System.Windows.Forms.Button StopButton;
     }
 }
 
