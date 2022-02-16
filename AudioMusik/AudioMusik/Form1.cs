@@ -15,7 +15,7 @@ namespace AudioMusik
     public partial class Form1 : Form
     {
         SoundPlayer sp;
-        //string[] file,filepath;
+        string[] file,filepath;
         public Form1()
         {
             InitializeComponent();
@@ -43,12 +43,12 @@ namespace AudioMusik
             openFile.Filter = "WAV files(*wav)|*.wav|All files(*.*)|*.*";
             if(openFile.ShowDialog()==System.Windows.Forms.DialogResult.OK)
             {
-                //file=openFile.SafeFileNames;
-                //filepath=openFile.FileNames;
-                //for(int i=0;i<file.Length;i++)
-                //{
-                //    listBox.Items.Add(file[i]);
-                //}
+                file=openFile.SafeFileNames;
+                filepath=openFile.FileNames;
+                for(int i=0;i<file.Length;i++)
+                {
+                    listBox.Items.Add(file[i]);
+                }
                 if (openFile.FileName.Substring(openFile.FileName.Length - 3, 3) == "wav") ;
                 sp.SoundLocation = openFile.FileName;
             }
