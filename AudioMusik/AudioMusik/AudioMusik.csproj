@@ -110,5 +110,17 @@
   <ItemGroup>
     <None Include="Resources\ММММ.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Konfuz - Ратата %28Bardrop Remix%29 .mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Steve Modana feat. Sary - Fireflies.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bomfunk MC%27s - Freestyler %28Ayur Tsyrenov DFM Remix%29.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bemax - Zero Two %28Darling Ohayo%29.mp3" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

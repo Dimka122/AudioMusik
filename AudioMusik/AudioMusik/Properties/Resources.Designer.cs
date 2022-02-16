@@ -61,6 +61,46 @@ namespace AudioMusik.Properties {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Bemax___Zero_Two__Darling_Ohayo_ {
+            get {
+                object obj = ResourceManager.GetObject("Bemax___Zero_Two__Darling_Ohayo_", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Bomfunk_MC_s___Freestyler__Ayur_Tsyrenov_DFM_Remix_ {
+            get {
+                object obj = ResourceManager.GetObject("Bomfunk_MC_s___Freestyler__Ayur_Tsyrenov_DFM_Remix_", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Konfuz___Ратата__Bardrop_Remix_ {
+            get {
+                object obj = ResourceManager.GetObject("Konfuz___Ратата__Bardrop_Remix_", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Steve_Modana_feat__Sary___Fireflies {
+            get {
+                object obj = ResourceManager.GetObject("Steve_Modana_feat__Sary___Fireflies", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap ММММ {
