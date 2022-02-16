@@ -70,6 +70,7 @@ namespace AudioMusik
             this.LeftButton.TabIndex = 1;
             this.LeftButton.Text = "<<<";
             this.LeftButton.UseVisualStyleBackColor = false;
+            this.LeftButton.Click += new System.EventHandler(this.LeftButton_Click);
             // 
             // PlayButton
             // 
@@ -82,9 +83,7 @@ namespace AudioMusik
             this.PlayButton.TabIndex = 2;
             this.PlayButton.Text = ">";
             this.PlayButton.UseVisualStyleBackColor = false;
-            this.PlayButton.Click+=new EventHandler(PlayButton_Click);
-            Controls.Add(PlayButton);
-
+            this.PlayButton.Click += new System.EventHandler(this.PlayButton_Click);
             // 
             // RightButton
             // 
@@ -97,6 +96,7 @@ namespace AudioMusik
             this.RightButton.TabIndex = 3;
             this.RightButton.Text = ">>>";
             this.RightButton.UseVisualStyleBackColor = false;
+            this.RightButton.Click += new System.EventHandler(this.RightButton_Click);
             // 
             // listBox
             // 
@@ -108,8 +108,7 @@ namespace AudioMusik
             this.listBox.Name = "listBox";
             this.listBox.Size = new System.Drawing.Size(200, 95);
             this.listBox.TabIndex = 4;
-            this.listBox.SelectedIndexChanged+=new EventHandler(listBox_SelectedIndexChanged);
-            Controls.Add(listBox);
+            this.listBox.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);
             // 
             // SaveButton
             // 
@@ -122,10 +121,9 @@ namespace AudioMusik
             this.SaveButton.TabIndex = 5;
             this.SaveButton.Text = "Добавить";
             this.SaveButton.UseVisualStyleBackColor = false;
-            this.SaveButton.Click+=new EventHandler(SaveButton_Click);
-            Controls.Add(SaveButton);
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
-            // DeleteButton
+            // StopButton
             // 
             this.StopButton.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.StopButton.ForeColor = System.Drawing.Color.Black;
@@ -135,8 +133,7 @@ namespace AudioMusik
             this.StopButton.TabIndex = 6;
             this.StopButton.Text = "Stop";
             this.StopButton.UseVisualStyleBackColor = false;
-            this.StopButton.Click += new EventHandler(StopButton_Click);
-            Controls.Add(StopButton);
+            this.StopButton.Click += new System.EventHandler(this.StopButton_Click);
             // 
             // Form1
             // 

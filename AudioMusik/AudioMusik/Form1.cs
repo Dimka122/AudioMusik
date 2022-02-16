@@ -44,6 +44,17 @@ namespace AudioMusik
                 }
             }
         }
+
+        private void RightButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LeftButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void listBox_SelectedIndexChanged(object sender,EventArgs e)
         {
             //sp.SoundLocation=filepath[listBox.SelectedIndex];
