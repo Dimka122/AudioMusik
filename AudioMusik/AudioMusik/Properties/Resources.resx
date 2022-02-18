@@ -118,19 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Bemax___Zero_Two__Darling_Ohayo_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bemax - Zero Two (Darling Ohayo).mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Bomfunk_MC_s___Freestyler__Ayur_Tsyrenov_DFM_Remix_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bomfunk MC's - Freestyler (Ayur Tsyrenov DFM Remix).mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Konfuz___Ратата__Bardrop_Remix_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Konfuz - Ратата (Bardrop Remix) .mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Steve_Modana_feat__Sary___Fireflies" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Steve Modana feat. Sary - Fireflies.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ММММ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="ММММ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ММММ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ММММ2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ММММ1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

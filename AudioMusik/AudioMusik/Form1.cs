@@ -9,65 +9,66 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 using System.IO;
+using System.Windows;
+using Microsoft.Win32;
 
 namespace AudioMusik
 {
     public partial class Form1 : Form
     {
-        SoundPlayer sp;
-        string[] file,filepath;
+        SoundPlayer player = null;
+
+        string fileName = string.Empty;
+
         public Form1()
         {
             InitializeComponent();
-            sp=new SoundPlayer();
         }
         private void PlayButton_Click(object sender, EventArgs e)
         {
-            //System.Reflection.Assembly a = System.Reflection.Assembly.GetExecutingAssembly();
-            //System.IO.Stream s = a.GetManifestResourceStream("<AudioMusik>.chimes.wav");
+            try
+            {
+                player.SoundLocation = fileName;
+                player.Play();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            //System.Media.SoundPlayer sp = new System.Media.SoundPlayer(Properties.Resources);
-            //sp.SoundLocation = "My Wav File.wav";
-            //SoundPlayer sp=new SoundPlayer(s);
-            sp.Play();
+                OpenMedia();
+            }
         }
         private void StopButton_Click(object sender,EventArgs e)
         {
-           // System.Media.SoundPlayer sp = new SoundPlayer();
-            //SoundPlayer sp=new SoundPlayer();
-            sp.Stop();
+           
+            player.Stop();
         }
         private void SaveButton_Click(object sender,EventArgs e)
         {
-            OpenFileDialog openFile=new OpenFileDialog();
-            openFile.Filter = "WAV files(*wav)|*.wav|All files(*.*)|*.*";
-            if(openFile.ShowDialog()==System.Windows.Forms.DialogResult.OK)
+            OpenMedia();
+        }
+
+        
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            player = new SoundPlayer();
+        }
+
+        private void OpenMedia()
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
             {
-                file=openFile.SafeFileNames;
-                filepath=openFile.FileNames;
-                for(int i=0;i<file.Length;i++)
-                {
-                    listBox.Items.Add(file[i]);
-                }
-                if (openFile.FileName.Substring(openFile.FileName.Length - 3, 3) == "wav") ;
-                sp.SoundLocation = openFile.FileName;
+                openFile.Filter = "WAV files(*wav)|*.wav|All files(*.*)|*.*";
+
+                openFile.Multiselect = false;
+
+                openFile.ValidateNames = true;
+            };
+            if(openFile.ShowDialog()==DialogResult.OK)
+            {
+                fileName = textBox1.Text= openFile.FileName;
+
             }
-        }
-
-        private void RightButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LeftButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox_SelectedIndexChanged(object sender,EventArgs e)
-        {
-            //sp.SoundLocation=filepath[listBox.SelectedIndex];
-
         }
     }
 }
