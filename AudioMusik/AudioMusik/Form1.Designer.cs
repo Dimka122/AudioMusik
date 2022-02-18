@@ -88,7 +88,8 @@ namespace AudioMusik
             // 
             // StopButton
             // 
-            this.StopButton.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.StopButton.BackColor = System.Drawing.Color.Red;
+            this.StopButton.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.StopButton.ForeColor = System.Drawing.Color.Black;
             this.StopButton.Location = new System.Drawing.Point(127, 218);
             this.StopButton.Name = "StopButton";
